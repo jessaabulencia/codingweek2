@@ -117,7 +117,7 @@ body {
   text-decoration: none;
 }
 
-.rate li a:focus,
+.rate li a.active:hover,
 .rate li a:hover {
   background-color: hsl(25, 97%, 53%);
   color: hsl(0, 0%, 100%);
