@@ -116,13 +116,16 @@ body {
   line-height: 1;
   text-decoration: none;
 }
+
+.rate li a:focus,
 .rate li a:hover {
   background-color: hsl(25, 97%, 53%);
-  color: #fff;
+  color: hsl(0, 0%, 100%);
 }
+
 .rate li a.active {
-  background-color: hsl(25, 97%, 53%);
-  color: #fff;
+  background-color: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
 }
 
 .btn01 a {
