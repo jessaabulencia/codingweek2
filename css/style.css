@@ -99,6 +99,10 @@ body {
   margin-bottom: 32px;
 }
 
+.rate li {
+  width: calc(100% / 5 - 15px);
+}
+
 .rate li a {
   content: '';
   display: flex;
@@ -155,7 +159,7 @@ body {
 .box._thankyou .txt03 {
   display: inline-block;
   margin-bottom: 40px;
-  padding: 6px 10px 1px 10px;
+  padding: 6px 20px 1px;
   width: auto;
   background-color: hsla(217, 12%, 63%, 0.1);
   border-radius: 50px;
