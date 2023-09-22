@@ -1,0 +1,222 @@
+/* ==Reset CSS== */
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* ==Reset CSS== */
+
+* {
+  -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+  background: hsl(216, 12%, 8%);
+  font-size: 15px;
+  font-family: 'Overpass', sans-serif;
+  color: hsl(0, 0%, 100%);
+  line-height: 1.5;
+}
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0 25px;
+  width: 100%;
+}
+
+.wrap {
+  margin: 0 auto;
+  padding: 35px 39px 35px 32px;
+  max-width: 412px;
+  background: hsl(213, 19%, 18%);
+  border-radius: 30px;
+}
+
+.box._thankyou .wrap {
+  padding: 45px 39px 45px 32px;
+}
+
+.ico_star {
+  content: '';
+  margin-bottom: 28px;
+  width: 48px;
+  height: 48px;
+  background-image: url(../images/icon-star.svg);
+  background-color: hsla(217, 12%, 63%, 0.1); 
+  background-repeat: no-repeat;
+  background-position: center;
+    -moz-border-radius: 70px; 
+    -webkit-border-radius: 70px; 
+  border-radius: 70px;
+}
+
+.txt01 {
+  margin-bottom: 10px;
+  font-size: 28px;
+  color: hsl(0, 0%, 100%);
+}
+
+.txt02 {
+  margin-bottom: 24px;
+  color: hsl(217, 12%, 63%);
+  line-height: 1.6;
+}
+
+.rate {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.rate li a {
+  content: '';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: hsla(217, 12%, 63%, 0.1);
+  border-radius: 70px;
+  color: hsl(217, 12%, 63%);
+  line-height: 1;
+  text-decoration: none;
+}
+.rate li a:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: #fff;
+}
+.rate li a.active {
+  background-color: hsl(25, 97%, 53%);
+  color: #fff;
+}
+
+.btn01 a {
+  display: inline-block;
+  padding: 12px;
+  width: 100%;
+  background: hsl(25, 97%, 53%);
+  border-radius: 25px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.btn01 a:hover {
+  background: #fff;
+  color: hsl(25, 97%, 53%);
+}
+
+.attribution {
+  display: none;
+}
+
+.box._rating {
+  display: block;
+}
+
+.box._thankyou {
+  display: none;
+  text-align: center;
+}
+
+.box._thankyou .txt03 {
+  display: inline-block;
+  margin-bottom: 40px;
+  padding: 6px 10px 1px 10px;
+  width: auto;
+  background-color: hsla(217, 12%, 63%, 0.1);
+  border-radius: 50px;
+  color: hsl(25, 97%, 53%);
+}
+
+.box._thankyou .txt01 {
+  margin-bottom: 15px;
+  line-height: 1;
+}
+
+.box._thankyou .txt02 {
+  margin-bottom: 5px;
+}
+
+.ico_done {
+  margin-bottom: 25px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .box {
+    padding: 0 24px;
+  }
+  .wrap {
+    padding: 20px 24px;
+    max-width: 327px;
+    border-radius: 20px;
+  }
+  .box._thankyou .wrap {
+    padding: 30px 24px;
+  }
+  .ico_star {
+    margin-bottom: 20px;
+    width: 41px;
+    height: 41px;
+  }
+  .ico_done {
+    margin-bottom: 20px;
+  }
+  .ico_done img {
+    width: 50%;
+  }
+  .txt01 {
+    font-size: 24px;
+  }
+  .txt02 {
+    font-size: 14px;
+  }
+  .rate li a {
+    width: 42px;
+    height: 42px;
+    font-size: 13px;
+  }
+  .box._thankyou .txt03 {
+    margin-bottom: 32px;
+  }
+  .box._thankyou .txt01 {
+    margin-bottom: 17px;
+  }
+  .box._thankyou .txt02 {
+    margin-bottom: 5px;
+  }
+}
